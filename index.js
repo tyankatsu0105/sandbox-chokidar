@@ -7,8 +7,7 @@ const ignored = [
 
 const watcher = chokidar.watch('.', {
   ignored,
-  ignoreInitial: true,
-  cwd
+  ignoreInitial: true
 });
 
 watcher.on('add', path => console.log(path))
